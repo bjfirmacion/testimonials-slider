@@ -1,6 +1,7 @@
 //========== SLIDER ==========
 .slider {
   max-width: 144rem;
+  max-height: 65.7rem;
   padding: 6.3rem 16.5rem;
   background-image: url(../images/pattern-bg.svg);
   background-repeat: no-repeat;
@@ -11,22 +12,20 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
+
 
 
   &__slides {
+    width: 100%;
     display: flex;
-    overflow: hidden;
   }
 
   &__slide {
     flex: 1 0 100%;
     display: inline;
-    margin-right: 10rem;
-    opacity: 0;
-
-    &.active {
-      opacity: 1;
-    }
+    margin-right: 21.5rem;
+    opacity: 1;
   }
 
   &__slide-content {
