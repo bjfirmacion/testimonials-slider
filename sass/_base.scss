@@ -1,0 +1,29 @@
+//========== VARIABLES ==========
+:root {
+    /** COLORS **/
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+    --dark-grayish-blue:#8585AC;
+
+    /** SHADOWS **/
+    --box-shadow-1: 0 4rem 5rem -3rem rgba(36,36,113,0.50);
+    --box-shadow-2: 0 1.5rem 2rem -1rem rgba(36,36,113,0.10);
+}
+
+//========== RESETS ==========
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% // sets 1 rem = 10px based on browser default
+}
+
+//========== TYPOGRAPHY ==========
+body {
+    font-family: 'Inter', sans-serif;
+}

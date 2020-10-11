@@ -1,0 +1,43 @@
+@keyframes slideInNext {
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        // opacity: 1;
+    }
+}
+
+@keyframes slideInPrev {
+    0%{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        // opacity: 1;
+    }
+}
+
+@keyframes slideOutNext {
+    0%{
+        transform: translateX(0%);
+        opacity: 1;
+        // display: flex;
+    }
+    70% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}

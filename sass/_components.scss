@@ -1,0 +1,140 @@
+//========== SLIDER ==========
+.slider {
+  max-width: 144rem;
+  padding: 6.3rem 16.5rem;
+  background-image: url(../images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 48.4%;
+  background-position: bottom 0px right 7.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  &__slides {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__slide {
+    flex: 1 0 100%;
+    display: inline;
+    margin-right: 10rem;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__slide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__buttons {
+    flex: 0 0 auto;
+    width: 11.2rem;
+    height: 5.6rem;
+    box-shadow: var(--box-shadow-2);
+    display: flex;
+
+    position: absolute;
+    bottom: 6.5%;
+    right: 36%;
+  }
+
+  &__button {
+    flex: 0 0 50%;
+    background-color: #fff;
+    cursor: pointer;
+
+    &--prev {
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+
+    &--next {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button-icon {
+    stroke: var(--dark-grayish-blue);
+    transition: stroke 0.2s;
+  }
+
+  &__button:hover &__button-icon {
+    stroke: var(--grayish-blue);
+  }
+
+  &__button:active &__button-icon {
+    stroke: var(--dark-grayish-blue);
+  }
+}
+
+//========== TESTIMONIAL ==========
+.testimonial {
+  &__text {
+    color: var(--dark-blue);
+    flex: 0 1 57.2%;
+    margin-right: -5.8%;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__quotation-marks {
+    position: absolute;
+    top: -6.5rem;
+    left: 9.5rem;
+  }
+
+  &__quote {
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 1.375;
+    margin-bottom: 3.2rem;
+  }
+
+  &__cite {
+    font-size: 2rem;
+    font-style: normal;
+
+    &--name {
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    &--role {
+      color: var(--grayish-blue);
+    }
+  }
+
+  &__img {
+    flex: 0 1 48.65%;
+  }
+
+  &__photo {
+    width: 100%;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 5px;
+  }
+}
+
+//========== ATTRIBUTION ==========
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
