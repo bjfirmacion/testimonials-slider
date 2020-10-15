@@ -11,8 +11,8 @@
     @if $breakpoint == small-tablet {
         @media only screen and (max-width: 52.5em) { @content }; //840 px
     }
-    @if $breakpoint == mobile {
-        @media only screen and (max-width: 47.5em) { @content }; //760 px
+     @if $breakpoint == mobile {
+        @media only screen and (max-width: 41em) { @content }; //656 px
     }
     @if $breakpoint == small-mobile {
         @media only screen and (max-width: 22.5em) { @content }; //360 px
