@@ -1,16 +1,19 @@
 .section-testimonials {
     height: 100vh;
     width: 100%;
-    padding: 5rem 0 9.3rem 0;
+    padding: 5rem 0 9.3rem 5rem;
     background-image: url(../images/pattern-curve.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
-    // background-size: 42.36%;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    @include respond(tablet-landscape) {
+      height: auto;
+  }
 
     @include respond(tablet-portrait) {
         padding: 4rem 8rem;
