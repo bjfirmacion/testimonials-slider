@@ -42,7 +42,6 @@ slider.prepend(lastClone);
 const allSlides = document.querySelectorAll('.slider__slide'); //allSlides includes the clones
 
 // SHOW THE FIRST SLIDE
-slides[0].classList.add('active');
 slider.style.transform = `translateX(${-moveX}px)`;
 
 // SET COUNTER AND ADD EVENT LISTENERS TO BUTTON;

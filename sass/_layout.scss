@@ -1,5 +1,5 @@
 .section-testimonials {
-    height: 80rem;
+    height: 100vh;
     width: 100%;
     padding: 5rem 0 9.3rem 0;
     background-image: url(../images/pattern-curve.svg);
@@ -10,4 +10,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include respond(tablet-portrait) {
+        padding: 4rem 8rem;
+        background-size: 76%;
+    }
+
+    @include respond(mobile) {
+        padding: 2.4rem;
+        align-items: flex-start;
+    }
 }
